@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="p1.css">
+    <script src="https://kit.fontawesome.com/ee032ea639.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Home - Blooming Petals</title>
+</head>
+
+<!-- 
+<div class="loader">
+  <div style="--i: 1"></div>
+  <div style="--i: 2"></div>
+  <div style="--i: 3"></div>
+  <div style="--i: 4"></div>
+</div> -->
+
+
+<body id="body" style="background: #1b1414;">
+
+
+
+
+
+
+    <!-- nav-bar -->
+    <div class="main-nav" id="main-nav">
+        <header>
+            <!-- <img src="blooming petals logo illustration 2.png" alt="logo" class="logo"> -->
+            <ul>
+                <!-- <li id="search-btn" onclick="searchopen()"><a href="all.html" class="logo"><i
+                      class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li> -->
+                  <h1><a href="index.html" class="logo">Blooming Petals</a></h1>
+                </li>
+                <!-- <li id="cart-btn" onclick="cartopen()"><i class="fa-solid fa-cart-shopping"></i></li> -->
+              </ul>
+        </header>
+        <nav>
+            <ul>
+                <li class="nav-list-items flower-btn"><a href="all.html">FLOWERS</a>
+                    <div class="box2">
+                        <ul>
+                            <li><a href="all.html">All</a></li>
+                            <li><a href="natural.html">Natural</a></li>
+                            <li><a href="artificial.html">Artificial</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-list-items"><a href="boxes.html">BOXES</a></li>
+                <li class="nav-list-items occasion-btn"><a href="">OCCASIONS</a>
+                    <div class="box3">
+                        <ul>
+                            <li><a href="happybirthday.html">Happy Birthday</a></li>
+                            <li><a href="happyanniversary.html">Happy Anniversary</a></li>
+                            <li><a href="getwellsoon.html">Get Well Soon</a></li>
+                            <!-- <li><a href="congratulations.html">Congratulations</a></li> -->
+                            <!-- <li><a href="valentineday.html">Velantines Day</a></li> -->
+
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-list-items"><a href="gallery.html">GALLERY</a></li>
+                <li class="nav-list-items"><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <nav class="media-nav">
+            <i class="fa-solid fa-bars" onclick="menu()" id="menu-btn"></i>
+            <div class="popup-nav" id="popup-nav">
+                <ul>
+                    <li><i class="fa-solid fa-xmark" onclick="menuclose()" id="menu-close"></i></li>
+                    <li class="flower-btn"><a href="all.html">FLOWERS</a>
+
+                        <div class="nav-box2">
+                            <ul>
+                                <li><a href="all.html">All</a></li>
+                                <li><a href="natural.html">Natural</a></li>
+                                <li><a href="artificial.html">Artificial</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li><a href="">BOXES</a></li>
+                    <li class="occasion-btn"><a href="">OCCASIONS</a>
+
+                        <div class="nav-box3">
+                            <ul>
+                                <li><a href="happybirthday.html">Happy Birthday</a></li>
+                                <li><a href="happyanniversary.html">Happy Anniversary</a></li>
+                                <li><a href="getwellsoon.html">Get Well Soon</a></li>
+                                <!-- <li><a href="">Congratulations</a></li> -->
+                                <!-- <li><a href="">Velantines Day</a></li> -->
+
+                            </ul>
+                        </div>
+
+
+                    </li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- nav-bar -->
+
+
+    <!-- popup add -->
+    <!-- <div class="popup" id="popup">
+    <i class="fa-solid fa-x" onclick="dnone()" id="dnone"></i>
+    <img src="images/sale.jpg" alt="">
+
+  </div> -->
+    <!-- popup add -->
+
+    <!-- bg -->
+    <svg style="position: fixed;top:0;" xmlns="http://www.w3.org/2000/svg" version="1.1"
+        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1440" height="750"
+        preserveAspectRatio="none" viewBox="0 0 1440 750">
+        <g mask="url(&quot;#SvgjsMask3028&quot;)" fill="none">
+            <rect width="1440" height="750" x="0" y="0" fill="rgba(27, 20, 20, 1)"></rect>
+            <path d="M94 750L844 0L1093 0L343 750z" fill="url(&quot;#SvgjsLinearGradient3029&quot;)"></path>
+            <path d="M533.2 750L1283.2 0L1889.2 0L1139.2 750z" fill="url(&quot;#SvgjsLinearGradient3029&quot;)"></path>
+            <path d="M1416 750L666 0L-34.5 0L715.5 750z" fill="url(&quot;#SvgjsLinearGradient3030&quot;)"></path>
+            <path d="M893.8 750L143.79999999999995 0L-439.70000000000005 0L310.29999999999995 750z"
+                fill="url(&quot;#SvgjsLinearGradient3030&quot;)"></path>
+            <path d="M872.4481060451559 750L1440 182.4481060451559L1440 750z"
+                fill="url(&quot;#SvgjsLinearGradient3029&quot;)"></path>
+            <path d="M0 750L567.5518939548441 750L 0 182.4481060451559z"
+                fill="url(&quot;#SvgjsLinearGradient3030&quot;)"></path>
+        </g>
+        <defs>
+            <mask id="SvgjsMask3028">
+                <rect width="1440" height="750" fill="#ffffff"></rect>
+            </mask>
+            <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="SvgjsLinearGradient3029">
+                <stop stop-color="rgba(59, 44, 44, 1)" offset="0"></stop>
+                <stop stop-opacity="0" stop-color="rgba(59, 44, 44, 1)" offset="0.66"></stop>
+            </linearGradient>
+            <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="SvgjsLinearGradient3030">
+                <stop stop-color="rgba(59, 44, 44, 1)" offset="0"></stop>
+                <stop stop-opacity="0" stop-color="rgba(59, 44, 44, 1)" offset="0.66"></stop>
+            </linearGradient>
+        </defs>
+    </svg>
+    <!-- bg -->
+
+    <!-- download section -->
+
+    <div class="download-sec" id="download-sec">
+        <!-- for open -->
+        <div class="header h2 fw-light" id="header">
+            <li id="download-btn" onclick="downloadup()"><i class="fa-solid fa-angle-down" id="arrow"></i> </li>
+        </div>
+        <!-- for open -->
+
+        <!-- for close -->
+        <div class="header2 h2 fw-light" id="header2">
+            <li id="download-btn2" onclick="downloaddwn()"><i class="fa-solid fa-angle-down" id="arrow2"></i> </li>
+        </div>
+        <!-- for close -->
+
+        <div class="card download-card" style=" height: 35vh; box-shadow: none;position: absolute;bottom: 0;left: 22%;">
+            <div class="card-body">
+                <h5 class="card-title">Word File</h5>
+                <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+                <p class="card-text">This file contain information about us and our products.</p>
+                <div class="bbttnn">
+                    <a href="Blooming Patals pdf.pdf" class="btn btn-outline-dark border border-0 rounded-0" style="width: 100%;" download="">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- download section -->
+
+
+
+
+    <div data-aos="fade-up" class="section1" id="sec1">
+        <div class="container mt-3 cont1">
+            <img class="img" src="https://images.unsplash.com/photo-1564676676550-0da8264586a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="">
+            <div class="txt text-white ms-5 mt-3 text-break">
+                <h2>Orange Vibe</h2>
+                <h3>Rs.1,399</h3>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, alias veritatis? Iusto reprehenderit voluptas ducimus aspernatur quas deserunt amet nisi! Nisi exercitationem officia esse fugiat soluta beatae delectus ullam pariatur?</p>
+                <div class="bbttnn">
+                    <li class="btn btn-light border border-0 rounded-0" style="width: 50%;" onclick="alert('Thanks For Buying 🎉')">Buy</li>
+                    <li class="btn btn-dark border border-0 rounded-0" style="width: 50%;" onclick="alert('Added To Cart 🎉')">Add To Cart</li>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div data-aos="fade-up" class="section4">
+        <div class="container">
+          <!-- <h1 class="feedback-h1 sec4-h1">Latest from our collection</h1> -->
+    
+          <div class="card text-white" style="width: 25rem; height: 23rem; background: #3b2c2c;">
+            <img src="images/twentysix.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gift Guardian</h5>
+              <h6 class="card-title">Rs.5,499</h6>
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <div class="bbttnn">
+                <a href="all.html" class="btn btn-outline-light border border-0 rounded-0" style="width: 100%;">See More</a>
+              </div>
+    
+            </div>
+          </div>
+          <div class="card text-white" style="width: 25rem; height: 23rem; background: #3b2c2c;">
+            <img src="images/thirtyone.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Shiny Light</h5>
+              <h6 class="card-title">Rs.1,999</h6>
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <div class="bbttnn">
+                <a href="all.html" class="btn btn-outline-light border border-0 rounded-0" style="width: 100%;">See More</a>
+              </div>
+            </div>
+          </div>
+          <div class="card text-white" style="width: 25rem; height: 23rem; background: #3b2c2c;">
+            <img src="images/twentyseven.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Miniature Yellow</h5>
+              <h5 class="card-title">Rs.2,499</h5>
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <div class="bbttnn">
+                <a href="all.html" class="btn btn-outline-light border border-0 rounded-0" style="width: 100%;">See More</a>
+              </div>
+    
+            </div>
+          </div>
+          <div class="card text-white" style="width: 25rem; height: 23rem; background: #3b2c2c;">
+            <img src="images/fourty.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Happy Marraige</h5>
+              <h6 class="card-title">Rs.3,999</h6>
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <div class="bbttnn">
+                <a href="all.html" class="btn btn-outline-light border border-0 rounded-0" style="width: 100%;">See More</a>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+    <section class="footer">
+        <!-- Footer -->
+        <footer class="bg-transparent text-white text-center text-md-start">
+            <!-- Grid container -->
+            <div class="container-fluid p-4" style="background: #3b2c2c;">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Blooming Petals</h5>
+
+                        <p>
+                            We are helping people to find and order beautiful flowers for special occasions like
+                            birthdays, anniversaries, or even just to brighten someone's day. We are providing a
+                            convenient platform for users to browse through a wide variety of flowers, choose their
+                            favorites, and have them delivered right to their doorstep. Plus, it can also offer helpful
+                            tips and information on caring for different types of flowers.
+                        </p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Explore</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <!-- <li>
+                <a href="https://web.whatsapp.com/" class="text-white text-decoration-none"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+              </li> -->
+                            <li>
+                                <a href="https://www.facebook.com/" class="text-white text-decoration-none"><i
+                                        class="fa-brands fa-facebook-f"></i> Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/i/flow/login" class="text-white text-decoration-none"><i
+                                        class="fa-brands fa-x-twitter"></i> Twitter</a>
+                            </li>
+                            <li>
+                                <a href="https://mail.google.com/mail/u/0" class="text-white text-decoration-none"><i
+                                        class="fa-brands fa-google"></i> GMail</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-2">Company</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="map.html" class="text-white text-decoration-none"><i
+                                        class="fa-solid fa-location-dot"></i> Location</a>
+                            </li>
+                            <li>
+                                <a href="delivery.html" class="text-white text-decoration-none"><i
+                                        class="fa-solid fa-truck"></i> Delivery</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="text-white text-decoration-none"><i
+                                        class="fa-solid fa-circle-info"></i> About Us</a>
+                            </li>
+                            <li>
+                                <a href="help.html" class="text-white text-decoration-none"><i
+                                        class="fa-solid fa-question"></i> FAQs</a>
+                            </li>
+                            <li>
+                                <!-- <a href="#!" class="text-white">Link 4</a> -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background: #2d2222;">
+                © 2023 Copyright:
+                <a class="text-white" href="home.html">Blooming Petals</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+
+        setTimeout(function () {
+            document.getElementById('body').style.display = 'block';
+        },);
+
+
+        setTimeout(function () {
+            document.getElementById('popup').style.display = 'block';
+        }, 4000);
+
+        function dnone() {
+            if (document.getElementById('dnone').click) {
+                document.getElementById('popup').style.display = "none";
+            }
+
+        }
+        function cartopen() {
+            if (document.getElementById('cart-btn').toggleAttribute) {
+                document.getElementById('cart-sec').style.top = "-54rem";
+                document.getElementById('sec1').style.filter = "blur(10px)";
+                document.getElementById('main-nav').style.filter = "blur(10px)";
+
+            }
+
+        }
+        function cartclose() {
+            if (document.getElementById('close-btn').click) {
+                document.getElementById('cart-sec').style.top = "-125rem";
+                document.getElementById('sec1').style.filter = "blur(0px)";
+                document.getElementById('main-nav').style.filter = "blur(0px)";
+
+
+            }
+        }
+        function searchopen() {
+            if (document.getElementById('search-btn').click) {
+                document.getElementById('search-sec').style.left = "1rem";
+            }
+
+        }
+        function searchclose() {
+            if (document.getElementById('search-close-btn').click) {
+                document.getElementById('search-sec').style.left = "-50rem";
+            }
+        }
+        function menu() {
+            if (document.getElementById('menu-btn').click) {
+                document.getElementById('popup-nav').style.display = "block";
+            }
+            if (document.getElementById('menu-btn').click) {
+                document.getElementById('menu-btn').style.display = "none";
+            }
+        }
+        function menuclose() {
+            if (document.getElementById('menu-close').click) {
+                document.getElementById('popup-nav').style.display = "none";
+                if (document.getElementById('menu-btn').click) {
+                    document.getElementById('menu-btn').style.display = "block";
+                }
+            }
+        }
+
+        // download word file
+        function downloadup() {
+            if (document.getElementById('download-btn').togglePopover) {
+                document.getElementById('download-sec').style.top = "60%";
+                document.getElementById('arrow').style.transform = "rotate(0deg)"
+                document.getElementById('header').style.display = "none"
+                document.getElementById('header2').style.display = "block"
+            }
+        }
+
+        // for closing download section
+        function downloaddwn() {
+            if (document.getElementById('download-btn2').togglePopover) {
+                document.getElementById('download-sec').style.top = "93%";
+                document.getElementById('arrow').style.transform = "rotate(180deg)"
+                document.getElementById('header').style.display = "block"
+                document.getElementById('header2').style.display = "none"
+            }
+        }
+    // For Cart Add Number
+    $('.counter').click(function() {
+    $('.count').html(function(i, val) { return val*1+1 });
+    Materialize.toast('Added To Cart!', 2000)
+});
+
+
+    </script>
+</body>
+
+</html>

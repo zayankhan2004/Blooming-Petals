@@ -1,0 +1,1908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="all.css">
+  <script src="https://kit.fontawesome.com/ee032ea639.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <title>All - Blooming Petals</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+</head>
+
+<body style="background: #1b1414;">
+  <!-- nav-bar -->
+  <div class="main-nav" id="main-nav">
+    <header>
+      <!-- <img src="blooming petals logo illustration 2.png" alt="logo" class="logo"> -->
+      <ul>
+        <li id="search-btn" onclick="searchopen()"><i class="fa-solid fa-magnifying-glass"></i></li>
+        <h1><a href="index.html" class="logo">Blooming Petals</a></h1>
+        </li>
+        <li id="cart-btn" onclick="cartopen()"><i class="fa-solid fa-cart-shopping"></i>
+          <!-- Increase the number of counts of cliks -->
+          <a class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="bottom"
+            data-delay="50" data-tooltip="Click Me">
+            <span class="count">0</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <nav>
+      <ul>
+        <li class="nav-list-items flower-btn"><a href="all.html">FLOWERS</a>
+          <div class="box2">
+            <ul>
+              <li><a href="all.html">All</a></li>
+              <li><a href="natural.html">Natural</a></li>
+              <li><a href="artificial.html">Artificial</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-list-items"><a href="boxes.html">BOXES</a></li>
+        <li class="nav-list-items occasion-btn"><a href="">OCCASIONS</a>
+          <div class="box3">
+            <ul>
+              <li><a href="happybirthday.html">Happy Birthday</a></li>
+              <li><a href="happyanniversary.html">Happy Anniversary</a></li>
+              <li><a href="getwellsoon.html">Get Well Soon</a></li>
+              <!-- <li><a href="congratulations.html">Congratulations</a></li> -->
+              <!-- <li><a href="valentineday.html">Velantines Day</a></li> -->
+
+            </ul>
+          </div>
+        </li>
+        <li class="nav-list-items"><a href="gallery.html">GALLERY</a></li>
+        <li class="nav-list-items"><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <nav class="media-nav">
+      <i class="fa-solid fa-bars" onclick="menu()" id="menu-btn"></i>
+      <div class="popup-nav" id="popup-nav">
+        <ul>
+          <li><i class="fa-solid fa-xmark" onclick="menuclose()" id="menu-close"></i></li>
+          <li class="flower-btn"><a href="all.html">FLOWERS</a>
+
+            <div class="nav-box2">
+              <ul>
+                <li><a href="all.html">All</a></li>
+                <li><a href="natural.html">Natural</a></li>
+                <li><a href="artificial.html">Artificial</a></li>
+              </ul>
+            </div>
+
+          </li>
+          <li><a href="">BOXES</a></li>
+          <li class="occasion-btn"><a href="">OCCASIONS</a>
+
+            <div class="nav-box3">
+              <ul>
+                <li><a href="happybirthday.html">Happy Birthday</a></li>
+                <li><a href="happyanniversary.html">Happy Anniversary</a></li>
+                <li><a href="getwellsoon.html">Get Well Soon</a></li>
+                <!-- <li><a href="">Congratulations</a></li> -->
+                <!-- <li><a href="">Velantines Day</a></li> -->
+
+              </ul>
+            </div>
+
+
+          </li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- nav-bar -->
+
+  <div class="search-section" id="search-sec">
+    <input type="text" placeholder="Search" id="searchBar">
+    <i class="fa-solid fa-xmark" onclick="searchclose()" id="search-close-btn"></i>
+  </div>
+
+
+  <svg style="position: fixed;top:0;" xmlns="http://www.w3.org/2000/svg" version="1.1"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1440" height="750"
+    preserveAspectRatio="none" viewBox="0 0 1440 750">
+    <g mask="url(&quot;#SvgjsMask3028&quot;)" fill="none">
+      <rect width="1440" height="750" x="0" y="0" fill="rgba(27, 20, 20, 1)"></rect>
+      <path d="M94 750L844 0L1093 0L343 750z" fill="url(&quot;#SvgjsLinearGradient3029&quot;)"></path>
+      <path d="M533.2 750L1283.2 0L1889.2 0L1139.2 750z" fill="url(&quot;#SvgjsLinearGradient3029&quot;)"></path>
+      <path d="M1416 750L666 0L-34.5 0L715.5 750z" fill="url(&quot;#SvgjsLinearGradient3030&quot;)"></path>
+      <path d="M893.8 750L143.79999999999995 0L-439.70000000000005 0L310.29999999999995 750z"
+        fill="url(&quot;#SvgjsLinearGradient3030&quot;)"></path>
+      <path d="M872.4481060451559 750L1440 182.4481060451559L1440 750z"
+        fill="url(&quot;#SvgjsLinearGradient3029&quot;)"></path>
+      <path d="M0 750L567.5518939548441 750L 0 182.4481060451559z" fill="url(&quot;#SvgjsLinearGradient3030&quot;)">
+      </path>
+    </g>
+    <defs>
+      <mask id="SvgjsMask3028">
+        <rect width="1440" height="750" fill="#ffffff"></rect>
+      </mask>
+      <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="SvgjsLinearGradient3029">
+        <stop stop-color="rgba(59, 44, 44, 1)" offset="0"></stop>
+        <stop stop-opacity="0" stop-color="rgba(59, 44, 44, 1)" offset="0.66"></stop>
+      </linearGradient>
+      <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="SvgjsLinearGradient3030">
+        <stop stop-color="rgba(59, 44, 44, 1)" offset="0"></stop>
+        <stop stop-opacity="0" stop-color="rgba(59, 44, 44, 1)" offset="0.66"></stop>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <div class="section1">
+    <div class="main1">
+      <h1>All</h1>
+      <p>"Happiness blooms from within, just like a flower in full bloom." 🌸</p>
+    </div>
+    <div class="shop-items">
+
+      <div class="main-cards d-flex justify-content-evenly">
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/two.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Happy Basket</h5>
+              <h6 class="card-title">Rs.4,999</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p5.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/three.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Box Of Goodness</h5>
+              <h6 class="card-title">Rs.3,499</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p6.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/eighteen.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Love Flower</h5>
+              <h6 class="card-title">Rs.1,399</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p7.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section2">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/twentyfour.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dark Glow</h5>
+              <h6 class="card-title">Rs.2,999</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p8.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/twelve.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Treat Box</h5>
+              <h5 class="card-title">Rs.4,199</h6>
+                <p class="card-text"></p>
+                <div class="bbttnn">
+                  <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                    style="width: 100%;">Add To Cart</a>
+                  <a class="counter" href="p9.html" class="btn btn-outline-light border border-0 rounded-0"
+                    style="width: 100%;">See More</a>
+                </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/seventeen.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red Velvet</h5>
+              <h6 class="card-title">Rs.1,999</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p10.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="section3">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+
+
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/twenty.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gorgeous Petal</h5>
+              <h6 class="card-title">Rs.3,999</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p11.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/four.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Box Of Pleasure</h5>
+              <h5 class="card-title">Rs.4,399</h6>
+                <p class="card-text"></p>
+                <div class="bbttnn">
+                  <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                    style="width: 100%;">Add To Cart</a>
+                  <a class="counter" href="p12.html" class="btn btn-outline-light border border-0 rounded-0"
+                    style="width: 100%;">See More</a>
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/thirteen.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Soft Vase</h5>
+              <h6 class="card-title">Rs.12,499</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p13.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="section4" style="
+       height: 100vh;
+   ">
+    <div class="main1">
+      <h1 class="text-md-start ms-5">Rose Decors</h1>
+      <p class="text-md-start ms-5">“It’s the time that you spent on your rose that makes your rose so important…People
+        have forgotten this truth, but you mustn’t forget it. You become responsible forever for what you’ve tamed.
+        You’re responsible for your rose.” 🌸</p>
+    </div>
+    <div class="shop-items">
+ 
+      <div class="main-cards d-flex justify-content-evenly">
+             <!-- first -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img
+              src="https://images.unsplash.com/photo-1607620510353-472b58f965c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red Shine</h5>
+              <h6 class="card-title">Rs.3,499</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p14.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- second -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img
+              src="https://images.unsplash.com/photo-1623362036080-47d58efb1a55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rose Bunch</h5>
+              <h6 class="card-title">Rs.2,499</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p15.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- third -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/seventeen.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red Velvet</h5>
+              <h6 class="card-title">Rs.1,999</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p10.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="section5" style="
+       height: 100vh;
+   ">
+    <div class="main1">
+    </div>
+    <div class="shop-items">
+
+      <div class="main-cards d-flex justify-content-evenly">
+
+        <!-- fourth -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img
+              src="https://images.unsplash.com/photo-1529636120425-66f3708694e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rose In Jar</h5>
+              <h6 class="card-title">Rs.6,999</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p16.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- fifth -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img
+              src="https://images.unsplash.com/photo-1588350350703-fddbfc5cfaf6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mix Pleasure</h5>
+              <h6 class="card-title">Rs.2,199</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p17.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- sixth -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/eighteen.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Love Flower</h5>
+              <h6 class="card-title">Rs.1,399</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p7.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="section6" style="
+       height: 100vh;
+   ">
+
+
+
+   <!-- lily -->
+
+
+
+   <div class="main1">
+      <h1 class="text-md-start ms-5">Lily Decors</h1>
+      <p class="text-md-start ms-5">“Why lily? It’s the most sacred and beautiful of all flowers in the World. They
+        bloom in mud and shine in the darkness like a gift from the gods to remind you that no matter how bad something
+        is, it will get better. That no matter how dark the night, the light will come for you.” 🌼</p>
+    </div>
+    <div class="shop-items">
+
+      <div class="main-cards d-flex justify-content-evenly">
+        <!-- first -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img
+              src="https://images.unsplash.com/photo-1619561021701-64f20219f7f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Warm Vibe</h5>
+              <h6 class="card-title">Rs.4,799</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p18.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+<!-- second -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img
+              src="https://images.unsplash.com/photo-1613341259797-3cdc05f6876f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lily Jar</h5>
+              <h6 class="card-title">Rs.3,499</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p19.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+<!-- third -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img
+              src="https://images.unsplash.com/photo-1631407056951-11215617b7f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pink Shade</h5>
+              <h6 class="card-title">Rs.1,399</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p20.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="section7" style="
+       height: 100vh;
+   ">
+    <div class="main1">
+    </div>
+    <div class="shop-items">
+
+      <div class="main-cards d-flex justify-content-evenly">
+
+<!-- fourth -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img
+              src="https://images.unsplash.com/photo-1631407779166-86952be9dbd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pink Shade(Vol-2)</h5>
+              <h6 class="card-title">Rs.1,999</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                  <a class="counter" href="p21.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+<!-- fifth -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img
+              src="https://images.unsplash.com/photo-1595264231433-f0ef531160c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lily Jar</h5>
+              <h6 class="card-title">Rs.2,999</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                  <a class="counter" href="p22.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+<!-- sixth -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img
+              src="https://images.unsplash.com/photo-1564676676550-0da8264586a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Orange Vibe</h5>
+              <h6 class="card-title">Rs.1,399</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                  <a class="counter" href="p23.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- media Query -->
+
+
+
+  <div class="media-section1">
+    <div class="main1">
+      <h1>All</h1>
+      <p>"Happiness blooms from within, just like a flower in full bloom." 🌸</p>
+    </div>
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+        <div class="colu"></div>
+        <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+          <img src="images/two.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Happy Basket</h5>
+            <h6 class="card-title">Rs.4,999</h6>
+            <p class="card-text"></p>
+            <div class="bbttnn">
+              <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p5.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/three.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Box Of Goodness</h5>
+              <h6 class="card-title">Rs.3,499</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                  <a class="counter" href="p6.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="media-section2">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/eighteen.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Love Flower</h5>
+              <h6 class="card-title">Rs.1,399</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                  <a class="counter" href="p7.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/twentyfour.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dark Glow</h5>
+              <h6 class="card-title">Rs.2,999</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                  <a class="counter" href="p8.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+  <div class="media-section3">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/twelve.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Treat Box</h5>
+              <h5 class="card-title">Rs.4,199</h6>
+                <p class="card-text"></p>
+                <div class="bbttnn">
+                  <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                    style="width: 100%;">Add To Cart</a>
+                    <a class="counter" href="p9.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>\
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/seventeen.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red Velvet</h5>
+              <h6 class="card-title">Rs.1,999</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                  <a class="counter" href="p10.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+  <div class="media-section4">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/twenty.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gorgeous Petal</h5>
+              <h6 class="card-title">Rs.3,999</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                  <a class="counter" href="p11.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/four.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Box Of Pleasure</h5>
+              <h5 class="card-title">Rs.4,399</h6>
+                <p class="card-text"></p>
+                <div class="bbttnn">
+                  <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                    style="width: 100%;">Add To Cart</a>
+                    <a class="counter" href="p12.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="media-section5">
+    <div class="main1">
+      <h1 class="text-md-start ms-5">Rose Decors</h1>
+      <p class="text-md-start ms-5">“It’s the time that you spent on your rose that makes your rose so important…People
+        have forgotten this truth, but you mustn’t forget it. You become responsible forever for what you’ve tamed.
+        You’re responsible for your rose.” 🌸</p>
+    </div>
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+
+
+         <!-- first -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img
+              src="https://images.unsplash.com/photo-1607620510353-472b58f965c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red Shine</h5>
+              <h6 class="card-title">Rs.3,499</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p14.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- second -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img
+              src="https://images.unsplash.com/photo-1623362036080-47d58efb1a55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rose Bunch</h5>
+              <h6 class="card-title">Rs.2,499</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p15.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="media-section6">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+
+        <!-- third -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/seventeen.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red Velvet</h5>
+              <h6 class="card-title">Rs.1,999</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p10.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- fourth -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img
+              src="https://images.unsplash.com/photo-1529636120425-66f3708694e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rose In Jar</h5>
+              <h6 class="card-title">Rs.6,999</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p16.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+  <div class="media-section7">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+        <!-- fifth -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img
+              src="https://images.unsplash.com/photo-1588350350703-fddbfc5cfaf6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mix Pleasure</h5>
+              <h6 class="card-title">Rs.2,199</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p17.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- sixth -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/eighteen.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Love Flower</h5>
+              <h6 class="card-title">Rs.1,399</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p7.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="media-section8">
+    <div class="main1">
+      <h1 class="text-md-start ms-5">Lily Decors</h1>
+      <p class="text-md-start ms-5">“Why lily? It’s the most sacred and beautiful of all flowers in the World. They
+        bloom in mud and shine in the darkness like a gift from the gods to remind you that no matter how bad something
+        is, it will get better. That no matter how dark the night, the light will come for you.” 🌼</p>
+    </div>
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+  <!-- first -->
+  <div class="colu">
+    <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+      <img
+        src="https://images.unsplash.com/photo-1619561021701-64f20219f7f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Warm Vibe</h5>
+        <h6 class="card-title">Rs.4,799</h6>
+        <p class="card-text"></p>
+        <div class="bbttnn">
+          <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+            style="width: 100%;">Add To Cart</a>
+          <a class="counter" href="p18.html" class="btn btn-outline-light border border-0 rounded-0"
+            style="width: 100%;">See More</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+       <!-- second -->
+       <div class="colu">
+        <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+          <img
+            src="https://images.unsplash.com/photo-1613341259797-3cdc05f6876f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lily Jar</h5>
+            <h6 class="card-title">Rs.3,499</h6>
+            <p class="card-text"></p>
+            <div class="bbttnn">
+              <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">Add To Cart</a>
+              <a class="counter" href="p19.html" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">See More</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="media-section9">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+        <!-- third -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img
+              src="https://images.unsplash.com/photo-1631407056951-11215617b7f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pink Shade</h5>
+              <h6 class="card-title">Rs.1,399</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p20.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+       <!-- fourth -->
+       <div class="colu">
+        <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+          <img
+            src="https://images.unsplash.com/photo-1631407779166-86952be9dbd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pink Shade(Vol-2)</h5>
+            <h6 class="card-title">Rs.1,999</h6>
+            <p class="card-text"></p>
+            <div class="bbttnn">
+              <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p21.html" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">See More</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      </div>
+    </div>
+  </div>
+  <div class="media-section10">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+      <!-- fifth -->
+      <div class="colu">
+        <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+          <img
+            src="https://images.unsplash.com/photo-1595264231433-f0ef531160c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lily Jar</h5>
+            <h6 class="card-title">Rs.2,999</h6>
+            <p class="card-text"></p>
+            <div class="bbttnn">
+              <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p22.html" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">See More</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+       <!-- sixth -->
+       <div class="colu">
+        <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+          <img
+            src="https://images.unsplash.com/photo-1564676676550-0da8264586a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Orange Vibe</h5>
+            <h6 class="card-title">Rs.1,399</h6>
+            <p class="card-text"></p>
+            <div class="bbttnn">
+              <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p23.html" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">See More</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="media-small-section1">
+    <div class="main1">
+      <h1>All</h1>
+      <p>"Happiness blooms from within, just like a flower in full bloom." 🌸</p>
+    </div>
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/two.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Happy Basket</h5>
+              <h6 class="card-title">Rs.4,999</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                  <a class="counter" href="p5.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="media-small-section2">
+    <div class="shop-items">
+      <div class="colu">
+        <div class="main-cards d-flex justify-content-evenly">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/three.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Box Of Goodness</h5>
+              <h6 class="card-title">Rs.3,499</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                  <a class="counter" href="p6.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="media-small-section3">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/eighteen.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Love Flower</h5>
+              <h6 class="card-title">Rs.1,399</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                  <a class="counter" href="p7.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="media-small-section4">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/twentyfour.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Dark Glow</h5>
+              <h6 class="card-title">Rs.2,999</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                  <a class="counter" href="p8.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="media-small-section5">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/twelve.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Treat Box</h5>
+              <h5 class="card-title">Rs.4,199</h6>
+                <p class="card-text"></p>
+                <div class="bbttnn">
+                  <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                    style="width: 100%;">Add To Cart</a>
+                    <a class="counter" href="p9.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="media-small-section6">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/seventeen.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red Velvet</h5>
+              <h6 class="card-title">Rs.1,999</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                  <a class="counter" href="p10.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="media-small-section7">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+        <div class="colu">
+          <div class="main-cards d-flex justify-content-evenly">
+            <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+              <img src="images/twentyseven.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Gorgeous Petal</h5>
+                <h6 class="card-title">Rs.3,999</h6>
+                <p class="card-text"></p>
+                <div class="bbttnn">
+                  <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                    style="width: 100%;">Add To Cart</a>
+                    <a class="counter" href="p10.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="media-small-section8">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/thirty.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Box Of Pleasure</h5>
+              <h5 class="card-title">Rs.4,399</h6>
+                <p class="card-text"></p>
+                <div class="bbttnn">
+                  <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                    style="width: 100%;">Add To Cart</a>
+                    <a class="counter" href="p11.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- rose decors -->
+
+
+  <div class="media-small-section9">
+    <div class="main1">
+      <h1>Rose Decors</h1>
+      <p>“It’s the time that you spent on your rose that makes your rose so important…People have forgotten this truth,
+        but you mustn’t forget it. You become responsible forever for what you’ve tamed. You’re responsible for your
+        rose.” 🌸</p>
+    </div>
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+              <!-- first -->
+              <div class="colu">
+                <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+                  <img
+                    src="https://images.unsplash.com/photo-1607620510353-472b58f965c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                    class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Red Shine</h5>
+                    <h6 class="card-title">Rs.3,499</h6>
+                    <p class="card-text"></p>
+                    <div class="bbttnn">
+                      <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                        style="width: 100%;">Add To Cart</a>
+                      <a class="counter" href="p14.html" class="btn btn-outline-light border border-0 rounded-0"
+                        style="width: 100%;">See More</a>
+                    </div>
+      
+                  </div>
+                </div>
+              </div>
+      </div>
+    </div>
+  </div>
+  <div class="media-small-section10">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+       <!-- second -->
+       <div class="colu">
+        <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+          <img
+            src="https://images.unsplash.com/photo-1623362036080-47d58efb1a55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rose Bunch</h5>
+            <h6 class="card-title">Rs.2,499</h6>
+            <p class="card-text"></p>
+            <div class="bbttnn">
+              <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">Add To Cart</a>
+              <a class="counter" href="p15.html" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">See More</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="media-small-section11">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+        <!-- third -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img src="images/seventeen.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red Velvet</h5>
+              <h6 class="card-title">Rs.1,999</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p10.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="media-small-section12">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+                <!-- fourth -->
+                <div class="colu">
+                  <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+                    <img
+                      src="https://images.unsplash.com/photo-1529636120425-66f3708694e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
+                      class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Rose In Jar</h5>
+                      <h6 class="card-title">Rs.6,999</h6>
+                      <p class="card-text"></p>
+                      <div class="bbttnn">
+                        <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                          style="width: 100%;">Add To Cart</a>
+                        <a class="counter" href="p16.html" class="btn btn-outline-light border border-0 rounded-0"
+                          style="width: 100%;">See More</a>
+                      </div>
+        
+                    </div>
+                  </div>
+                </div>
+      </div>
+    </div>
+  </div>
+  <div class="media-small-section13">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+        <!-- fifth -->
+        <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img
+              src="https://images.unsplash.com/photo-1588350350703-fddbfc5cfaf6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mix Pleasure</h5>
+              <h6 class="card-title">Rs.2,199</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p17.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="media-small-section14">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+       <!-- sixth -->
+       <div class="colu">
+        <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+          <img src="images/eighteen.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Love Flower</h5>
+            <h6 class="card-title">Rs.1,399</h6>
+            <p class="card-text"></p>
+            <div class="bbttnn">
+              <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">Add To Cart</a>
+              <a class="counter" href="p7.html" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">See More</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- lily decors -->
+
+  <div class="media-small-section15">
+    <div class="main1">
+      <h1>Lily Decors</h1>
+      <p>“Why lily? It’s the most sacred and beautiful of all flowers in the World. They bloom in mud and shine in the
+        darkness like a gift from the gods to remind you that no matter how bad something is, it will get better. That
+        no matter how dark the night, the light will come for you.” 🌼</p>
+    </div>
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+      <!-- first -->
+  <div class="colu">
+    <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+      <img
+        src="https://images.unsplash.com/photo-1619561021701-64f20219f7f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Warm Vibe</h5>
+        <h6 class="card-title">Rs.4,799</h6>
+        <p class="card-text"></p>
+        <div class="bbttnn">
+          <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+            style="width: 100%;">Add To Cart</a>
+          <a class="counter" href="p18.html" class="btn btn-outline-light border border-0 rounded-0"
+            style="width: 100%;">See More</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+  <div class="media-small-section16">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+              <!-- second -->
+              <div class="colu">
+                <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+                  <img
+                    src="https://images.unsplash.com/photo-1613341259797-3cdc05f6876f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                    class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Lily Jar</h5>
+                    <h6 class="card-title">Rs.3,499</h6>
+                    <p class="card-text"></p>
+                    <div class="bbttnn">
+                      <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                        style="width: 100%;">Add To Cart</a>
+                      <a class="counter" href="p19.html" class="btn btn-outline-light border border-0 rounded-0"
+                        style="width: 100%;">See More</a>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+      </div>
+    </div>
+  </div>
+  <div class="media-small-section17">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+       <!-- third -->
+       <div class="colu">
+        <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+          <img
+            src="https://images.unsplash.com/photo-1631407056951-11215617b7f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pink Shade</h5>
+            <h6 class="card-title">Rs.1,399</h6>
+            <p class="card-text"></p>
+            <div class="bbttnn">
+              <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">Add To Cart</a>
+              <a class="counter" href="p20.html" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">See More</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="media-small-section18">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+               <!-- fourth -->
+       <div class="colu">
+        <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+          <img
+            src="https://images.unsplash.com/photo-1631407779166-86952be9dbd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pink Shade(Vol-2)</h5>
+            <h6 class="card-title">Rs.1,999</h6>
+            <p class="card-text"></p>
+            <div class="bbttnn">
+              <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p21.html" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">See More</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="media-small-section19">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+            <!-- fifth -->
+      <div class="colu">
+        <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+          <img
+            src="https://images.unsplash.com/photo-1595264231433-f0ef531160c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lily Jar</h5>
+            <h6 class="card-title">Rs.2,999</h6>
+            <p class="card-text"></p>
+            <div class="bbttnn">
+              <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">Add To Cart</a>
+                <a class="counter" href="p22.html" class="btn btn-outline-light border border-0 rounded-0"
+                style="width: 100%;">See More</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="media-small-section20">
+    <div class="shop-items">
+      <div class="main-cards d-flex justify-content-evenly">
+         <!-- sixth -->
+         <div class="colu">
+          <div class="card text-white" style="width: 25rem;  background: #3b2c2c;">
+            <img
+              src="https://images.unsplash.com/photo-1564676676550-0da8264586a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Orange Vibe</h5>
+              <h6 class="card-title">Rs.1,399</h6>
+              <p class="card-text"></p>
+              <div class="bbttnn">
+                <a class="counter" href="#" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">Add To Cart</a>
+                  <a class="counter" href="p23.html" class="btn btn-outline-light border border-0 rounded-0"
+                  style="width: 100%;">See More</a>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <a id="see-more" onclick="more()" class="btn btn-outline-light border border-0 rounded-0" style="width: 100%;">See
+    More</a>
+  <!-- Footer -->
+  <section class="footer">
+    <!-- Footer -->
+    <footer class="bg-transparent text-white text-center text-md-start">
+      <!-- Grid container -->
+      <div class="container-fluid p-4" style="background: #3b2c2c;">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Blooming Petals</h5>
+
+            <p>
+              We are helping people to find and order beautiful flowers for special occasions like birthdays,
+              anniversaries, or even just to brighten someone's day. We are providing a convenient platform for users to
+              browse through a wide variety of flowers, choose their favorites, and have them delivered right to their
+              doorstep. Plus, it can also offer helpful tips and information on caring for different types of flowers.
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Explore</h5>
+
+            <ul class="list-unstyled mb-0">
+              <!-- <li>
+              <a href="https://web.whatsapp.com/" class="text-white text-decoration-none"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            </li> -->
+              <li>
+                <a href="https://www.facebook.com/" class="text-white text-decoration-none"><i
+                    class="fa-brands fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="https://twitter.com/i/flow/login" class="text-white text-decoration-none"><i
+                    class="fa-brands fa-x-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="https://mail.google.com/mail/u/0" class="text-white text-decoration-none"><i
+                    class="fa-brands fa-google"></i> GMail</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-2">Company</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="map.html" class="text-white text-decoration-none"><i class="fa-solid fa-location-dot"></i>
+                  Location</a>
+              </li>
+              <li>
+                <a href="delivery.html" class="text-white text-decoration-none"><i class="fa-solid fa-truck"></i>
+                  Delivery</a>
+              </li>
+              <li>
+                <a href="about.html" class="text-white text-decoration-none"><i class="fa-solid fa-circle-info"></i>
+                  About Us</a>
+              </li>
+              <li>
+                <a href="help.html" class="text-white text-decoration-none"><i class="fa-solid fa-question"></i>
+                  FAQs</a>
+              </li>
+              <li>
+                <!-- <a href="#!" class="text-white">Link 4</a> -->
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background: #2d2222;">
+        © 2023 Copyright:
+        <a class="text-white" href="home.html">Blooming Petals</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+  <!-- Footer -->
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script>
+    // function cartopen(){
+    //     if(document.getElementById('cart-btn').toggleAttribute) {
+    //             document.getElementById('cart-sec').style.top = "-54rem";
+    //             document.getElementById('sec1').style.filter = "blur(10px)";
+    //             document.getElementById('main-nav').style.filter = "blur(10px)";
+
+    //         }
+
+    // }
+    // function cartclose(){
+    //     if(document.getElementById('close-btn').click) {
+    //         document.getElementById('cart-sec').style.top = "-125rem";
+    //         document.getElementById('sec1').style.filter = "blur(0px)";
+    //         document.getElementById('main-nav').style.filter = "blur(0px)";
+
+
+    //     }
+    // }
+    // For Search Animation
+    function searchopen() {
+      if (document.getElementById('search-btn').click) {
+        document.getElementById('search-sec').style.left = "1rem";
+      }
+
+    }
+    function searchclose() {
+      if (document.getElementById('search-close-btn').click) {
+        document.getElementById('search-sec').style.left = "-50rem";
+      }
+    }
+
+    function menu() {
+      if (document.getElementById('menu-btn').click) {
+        document.getElementById('popup-nav').style.display = "block";
+      }
+      if (document.getElementById('menu-btn').click) {
+        document.getElementById('menu-btn').style.display = "none";
+      }
+    }
+    function menuclose() {
+      if (document.getElementById('menu-close').click) {
+        document.getElementById('popup-nav').style.display = "none";
+        if (document.getElementById('menu-btn').click) {
+          document.getElementById('menu-btn').style.display = "block";
+        }
+      }
+    }
+    function more() {
+      if (document.getElementById('see-more').click) {
+        document.getElementById('see-more').style.display = "none";
+        document.getElementById('more').style.display = "block";
+      }
+    }
+    // For Search Filter
+    $("#searchBar").keyup(function () {
+      let searchText = $(this).val().toLowerCase();
+
+      $(".colu").filter(function () {
+
+        let cardText = $(this).text().toLowerCase();
+
+        if (cardText.indexOf(searchText) > -1) {
+          $(this).show()
+        }
+        else {
+          $(this).hide()
+        }
+      })
+    })
+    // For Cart Add Number
+    $('.counter').click(function () {
+      $('.count').html(function (i, val) { return val * 1 + 1 });
+      Materialize.toast('Added To Cart!', 2000)
+    });
+  </script>
+
+
+  <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> -->
+
+  <script>
+
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="gallery.css">
+  <script src="https://kit.fontawesome.com/ee032ea639.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>Gallery - Blooming Petals</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+</head>
+
+<body style="background: #1b1414;">
+<!-- nav-bar -->
+<div class="main-nav" id="main-nav">
+  <header>
+    <!-- <img src="blooming petals logo illustration 2.png" alt="logo" class="logo"> -->
+    <ul>
+      <!-- <li id="search-btn" onclick="searchopen()"><a href="all.html" class="logo"><i
+            class="fa-solid fa-magnifying-glass"></i></a></li>
+      <li> -->
+        <h1><a href="index.html" class="logo">Blooming Petals</a></h1>
+      </li>
+      <!-- <li id="cart-btn" onclick="cartopen()"><i class="fa-solid fa-cart-shopping"></i></li> -->
+    </ul>
+  </header>
+  <nav>
+    <ul>
+      <li class="nav-list-items flower-btn"><a href="all.html">FLOWERS</a>
+        <div class="box2">
+          <ul>
+            <li><a href="all.html">All</a></li>
+            <li><a href="natural.html">Natural</a></li>
+            <li><a href="artificial.html">Artificial</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-list-items"><a href="boxes.html">BOXES</a></li>
+      <li class="nav-list-items occasion-btn"><a href="">OCCASIONS</a>
+        <div class="box3">
+          <ul>
+            <li><a href="happybirthday.html">Happy Birthday</a></li>
+            <li><a href="happyanniversary.html">Happy Anniversary</a></li>
+            <li><a href="getwellsoon.html">Get Well Soon</a></li>
+            <!-- <li><a href="congratulations.html">Congratulations</a></li> -->
+            <!-- <li><a href="valentineday.html">Velantines Day</a></li> -->
+
+          </ul>
+        </div>
+      </li>
+      <li class="nav-list-items"><a href="gallery.html">GALLERY</a></li>
+      <li class="nav-list-items"><a href="contact.html">CONTACT US</a></li>
+    </ul>
+  </nav>
+  <nav class="media-nav">
+    <i class="fa-solid fa-bars" onclick="menu()" id="menu-btn"></i>
+    <div class="popup-nav" id="popup-nav">
+      <ul>
+        <li><i class="fa-solid fa-xmark" onclick="menuclose()" id="menu-close"></i></li>
+        <li class="flower-btn"><a href="all.html">FLOWERS</a>
+        
+          <div class="nav-box2">
+            <ul>
+              <li><a href="all.html">All</a></li>
+              <li><a href="natural.html">Natural</a></li>
+              <li><a href="artificial.html">Artificial</a></li>
+            </ul>
+          </div>
+        
+        </li>
+        <li><a href="">BOXES</a></li>
+        <li class="occasion-btn"><a href="">OCCASIONS</a>
+        
+          <div class="nav-box3">
+            <ul>
+              <li><a href="happybirthday.html">Happy Birthday</a></li>
+              <li><a href="happyanniversary.html">Happy Anniversary</a></li>
+              <li><a href="getwellsoon.html">Get Well Soon</a></li>
+              <!-- <li><a href="">Congratulations</a></li> -->
+              <!-- <li><a href="">Velantines Day</a></li> -->
+
+            </ul>
+          </div>
+
+
+        </li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!-- nav-bar -->
+
+
+<svg style="position: fixed;top:0;" id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='16.5' height='32.877' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 0)'/><path d='M-5 2l5 10L5 2zm16.5 0l5 10 5-10zM8.25 4.438l-5 10h10zm-5 14l5 10.001 5-10zM0 20.878l-5 10H5zm16.5 0l-5 10h10z'  stroke-width='1' stroke='hsla(0, 17%, 22%, 0.58)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(#a)'/></svg>
+
+  <div data-aos="fade-up" class="section1" id="sec1">
+
+
+
+
+  <div class="gallery">
+
+    <!-- <h1 class="h1 text-white mt-5 ms-5" style="    font-family: 'Great Vibes', cursive;font-weight: 400;    font-size: 4rem; display: block;">Gallery</h1> -->
+    <img src="https://source.unsplash.com/800x500/?flower" alt="a forest after an apocalypse">
+    <img src="https://source.unsplash.com/800x500/?flowerbouquet" alt="a waterfall and many rocks">
+    <img src="https://source.unsplash.com/800x500/?flowerdecoration" alt="a house on a mountain">
+    <img src="https://source.unsplash.com/800x500/?floral" alt="sime pink flowers">
+    <img src="https://source.unsplash.com/800x500/?petals" alt="big rocks with some trees">
+    <img src="https://source.unsplash.com/800x500/?singleflower" alt="a waterfall, a lot of tree and a great view from the sky">
+    <img src="https://source.unsplash.com/800x500/?flowervase" alt="a cool landscape">
+    <img src="https://source.unsplash.com/800x500/?flowerpot" alt="inside a town between two big buildings">
+    <img src="https://source.unsplash.com/800x500/?flowerdecoration" alt="a great view of the sea above the mountain">
+  </div>
+  </div>
+
+</div>
+
+  <!-- <div class="cart-section" id="cart-sec">
+    <i class="fa-solid fa-xmark" onclick="cartclose()" id="close-btn"></i>
+   -->
+
+
+
+  <!-- <div class="search-section" id="search-sec">
+    <input type="text">
+    <i class="fa-solid fa-xmark" onclick="searchclose()" id="search-close-btn"></i>
+  </div> -->
+
+
+ 
+
+<!-- <div data-aos="fade-up" class="section3">
+  <div class="feedback">
+    <h1 class="feedback-h1">Give Us Your Feedback</h1>
+    <div class="input-div">
+      <input type="email" placeholder="EMAIL" id="email-input">&emsp13;
+      <input type="text" placeholder="Comment" id="feedback-input">
+      <div class="btn btn-outline-light btn-floating m-1">Submit</div>
+    </div>
+  </div>
+</div>
+
+
+
+    <div class="comment-sec">
+
+      <h1>Reviews</h1>
+      
+      <div class="card w-75 mb-3 text-white d-flex justify-content-center" style="width: 25rem;  background: #3b2c2c;">
+        <div class="card-body">
+          <h5 class="card-title">Andy</h5>
+          <p class="card-text">"Easy to use, great selection, prompt delivery, and my mom loved the flowers! Highly recommend!"</p>
+
+        </div>
+      </div>
+
+
+
+      <div class="card w-75 mb-3 text-white d-flex justify-content-center" style="width: 25rem;  background: #3b2c2c;">
+        <div class="card-body">
+          <h5 class="card-title">Carter</h5>
+          <p class="card-text">"Found the perfect bouquet quickly, smooth ordering, on-time delivery, and my friend was thrilled!"</p>
+
+        </div>
+      </div>
+
+
+        <div class="card w-75 mb-3 text-white d-flex justify-content-center" style="width: 25rem;  background: #3b2c2c;">
+          <div class="card-body">
+            <h5 class="card-title">Julia</h5>
+            <p class="card-text">"User-friendly, top-notch quality, excellent customer service. Best flower website out there!"</p>
+
+          </div>
+        </div>
+      </div> -->
+
+
+  <!-- media query -->
+
+  <!-- <div class="media-section1" id="sec1">
+    <div class="main">
+      <h1 class="heading">
+        Start your decorations with us.
+      </h1>
+      <p class="para1">
+        Join us in the art of expression, where "Blooming Petals" becomes the embodiment of thoughtful gifting,
+        spreading joy and forging lasting bonds.
+      </p>
+      <img class="background1" src="images/carlo-cucchia-lAojpEonKe0-unsplash-removebg-preview.png" alt="">
+    </div>
+
+  </div> -->
+
+  
+
+
+
+  <section class="footer" >
+    <!-- Footer -->
+    <footer class="bg-transparent text-white text-center text-md-start" >
+      <!-- Grid container -->
+      <div class="container-fluid p-4" style="background: #3b2c2c;">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Blooming Petals</h5>
+  
+            <p>
+              We are helping people to find and order beautiful flowers for special occasions like birthdays, anniversaries, or even just to brighten someone's day. We are providing a convenient platform for users to browse through a wide variety of flowers, choose their favorites, and have them delivered right to their doorstep. Plus, it can also offer helpful tips and information on caring for different types of flowers.
+            </p>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Explore</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <!-- <li>
+                <a href="https://web.whatsapp.com/" class="text-white text-decoration-none"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+              </li> -->
+              <li>
+                <a href="https://www.facebook.com/" class="text-white text-decoration-none"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="https://twitter.com/i/flow/login" class="text-white text-decoration-none"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="https://mail.google.com/mail/u/0" class="text-white text-decoration-none"><i class="fa-brands fa-google"></i> GMail</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-2">Company</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="map.html" class="text-white text-decoration-none"><i class="fa-solid fa-location-dot"></i> Location</a>
+              </li>
+              <li>
+                <a href="delivery.html" class="text-white text-decoration-none"><i class="fa-solid fa-truck"></i> Delivery</a>
+              </li>
+              <li>
+                <a href="about.html" class="text-white text-decoration-none"><i class="fa-solid fa-circle-info"></i> About Us</a>
+              </li>
+              <li>
+                <a href="help.html" class="text-white text-decoration-none"><i class="fa-solid fa-question"></i> FAQs</a>
+              </li>
+              <li>
+                <!-- <a href="#!" class="text-white">Link 4</a> -->
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background: #2d2222;">
+        © 2023 Copyright:
+        <a class="text-white" href="home.html">Blooming Petals</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+      AOS.init();
+    </script>
+  <script>
+    function cartopen() {
+      if (document.getElementById('cart-btn').toggleAttribute) {
+        document.getElementById('cart-sec').style.top = "-54rem";
+        document.getElementById('sec1').style.filter = "blur(10px)";
+        document.getElementById('main-nav').style.filter = "blur(10px)";
+
+      }
+
+    }
+    function cartclose() {
+      if (document.getElementById('close-btn').click) {
+        document.getElementById('cart-sec').style.top = "-125rem";
+        document.getElementById('sec1').style.filter = "blur(0px)";
+        document.getElementById('main-nav').style.filter = "blur(0px)";
+
+
+      }
+    }
+    function searchopen() {
+      if (document.getElementById('search-btn').click) {
+        document.getElementById('search-sec').style.left = "1rem";
+      }
+
+    }
+    function searchclose() {
+      if (document.getElementById('search-close-btn').click) {
+        document.getElementById('search-sec').style.left = "-50rem";
+      }
+    }
+    function menu() {
+      if(document.getElementById('menu-btn').click) {
+        document.getElementById('popup-nav').style.display = "block";
+      }
+      if(document.getElementById('menu-btn').click) {
+        document.getElementById('menu-btn').style.display = "none";
+      }
+    }
+    function menuclose() {
+      if(document.getElementById('menu-close').click) {
+        document.getElementById('popup-nav').style.display = "none";
+        if(document.getElementById('menu-btn').click) {
+        document.getElementById('menu-btn').style.display = "block";
+      }
+      }
+    }
+        // For Search Filter
+        $("#searchBar").keyup(function (){
+        let searchText = $(this).val().toLowerCase();
+
+        $(".colu").filter(function (){
+          
+          let cardText = $(this).text().toLowerCase();
+
+          if(cardText.indexOf(searchText) > -1){
+            $(this).show()
+          }
+          else{
+            $(this).hide()
+          }
+        })
+    })
+    // For Cart Add Number
+    $('.counter').click(function() {
+    $('.count').html(function(i, val) { return val*1+1 });
+    Materialize.toast('Added To Cart!', 2000)
+});
+
+
+  </script>
+</body>
+
+</html>

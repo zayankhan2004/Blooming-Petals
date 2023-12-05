@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home.css">
+  <script src="https://kit.fontawesome.com/ee032ea639.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>Home - Blooming Petals</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+
+<!-- 
+<div class="loader">
+  <div style="--i: 1"></div>
+  <div style="--i: 2"></div>
+  <div style="--i: 3"></div>
+  <div style="--i: 4"></div>
+</div> -->
+
+
+<body id="body" style="background: rgb(27, 20, 20);">
+
+
+
+
+
+
+  <!-- nav-bar -->
+  <div class="main-nav" id="main-nav">
+    <header>
+      <!-- <img src="blooming petals logo illustration 2.png" alt="logo" class="logo"> -->
+      <ul>
+        <!-- <li id="search-btn" onclick="searchopen()"><a href="all.html" class="logo"><i
+              class="fa-solid fa-magnifying-glass"></i></a></li>
+        <li> -->
+          <h1><a href="index.html" class="logo">Blooming Petals</a></h1>
+        </li>
+        <!-- <li id="cart-btn" onclick="cartopen()"><i class="fa-solid fa-cart-shopping"></i></li> -->
+      </ul>
+    </header>
+    <nav>
+      <ul>
+        <li class="nav-list-items flower-btn"><a href="all.html">FLOWERS</a>
+          <div class="box2">
+            <ul>
+              <li><a href="all.html">All</a></li>
+              <li><a href="natural.html">Natural</a></li>
+              <li><a href="artificial.html">Artificial</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-list-items"><a href="boxes.html">BOXES</a></li>
+        <li class="nav-list-items occasion-btn"><a href="">OCCASIONS</a>
+          <div class="box3">
+            <ul>
+              <li><a href="happybirthday.html">Happy Birthday</a></li>
+              <li><a href="happyanniversary.html">Happy Anniversary</a></li>
+              <li><a href="getwellsoon.html">Get Well Soon</a></li>
+              <!-- <li><a href="congratulations.html">Congratulations</a></li> -->
+              <!-- <li><a href="valentineday.html">Velantines Day</a></li> -->
+
+            </ul>
+          </div>
+        </li>
+        <li class="nav-list-items"><a href="gallery.html">GALLERY</a></li>
+        <li class="nav-list-items"><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <nav class="media-nav">
+      <i class="fa-solid fa-bars" onclick="menu()" id="menu-btn"></i>
+      <div class="popup-nav" id="popup-nav">
+        <ul>
+          <li><i class="fa-solid fa-xmark" onclick="menuclose()" id="menu-close"></i></li>
+          <li class="flower-btn"><a href="all.html">FLOWERS</a>
+
+            <div class="nav-box2">
+              <ul>
+                <li><a href="all.html">All</a></li>
+                <li><a href="natural.html">Natural</a></li>
+                <li><a href="artificial.html">Artificial</a></li>
+              </ul>
+            </div>
+
+          </li>
+          <li><a href="">BOXES</a></li>
+          <li class="occasion-btn"><a href="">OCCASIONS</a>
+
+            <div class="nav-box3">
+              <ul>
+                <li><a href="happybirthday.html">Happy Birthday</a></li>
+                <li><a href="happyanniversary.html">Happy Anniversary</a></li>
+                <li><a href="getwellsoon.html">Get Well Soon</a></li>
+                <!-- <li><a href="">Congratulations</a></li> -->
+                <!-- <li><a href="">Velantines Day</a></li> -->
+
+              </ul>
+            </div>
+
+
+          </li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- nav-bar -->
+
+
+  <!-- popup add -->
+  <!-- <div class="popup" id="popup">
+    <i class="fa-solid fa-x" onclick="dnone()" id="dnone"></i>
+    <img src="images/sale.jpg" alt="">
+
+  </div> -->
+  <!-- popup add -->
+
+  <!-- bg -->
+  <svg style="position: fixed;top:0;" xmlns="http://www.w3.org/2000/svg" version="1.1"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1440" height="750"
+    preserveAspectRatio="none" viewBox="0 0 1440 750">
+    <g mask="url(&quot;#SvgjsMask3028&quot;)" fill="none">
+      <rect width="1440" height="750" x="0" y="0" fill="rgba(27, 20, 20, 1)"></rect>
+      <path d="M94 750L844 0L1093 0L343 750z" fill="url(&quot;#SvgjsLinearGradient3029&quot;)"></path>
+      <path d="M533.2 750L1283.2 0L1889.2 0L1139.2 750z" fill="url(&quot;#SvgjsLinearGradient3029&quot;)"></path>
+      <path d="M1416 750L666 0L-34.5 0L715.5 750z" fill="url(&quot;#SvgjsLinearGradient3030&quot;)"></path>
+      <path d="M893.8 750L143.79999999999995 0L-439.70000000000005 0L310.29999999999995 750z"
+        fill="url(&quot;#SvgjsLinearGradient3030&quot;)"></path>
+      <path d="M872.4481060451559 750L1440 182.4481060451559L1440 750z"
+        fill="url(&quot;#SvgjsLinearGradient3029&quot;)"></path>
+      <path d="M0 750L567.5518939548441 750L 0 182.4481060451559z" fill="url(&quot;#SvgjsLinearGradient3030&quot;)">
+      </path>
+    </g>
+    <defs>
+      <mask id="SvgjsMask3028">
+        <rect width="1440" height="750" fill="#ffffff"></rect>
+      </mask>
+      <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="SvgjsLinearGradient3029">
+        <stop stop-color="rgba(59, 44, 44, 1)" offset="0"></stop>
+        <stop stop-opacity="0" stop-color="rgba(59, 44, 44, 1)" offset="0.66"></stop>
+      </linearGradient>
+      <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="SvgjsLinearGradient3030">
+        <stop stop-color="rgba(59, 44, 44, 1)" offset="0"></stop>
+        <stop stop-opacity="0" stop-color="rgba(59, 44, 44, 1)" offset="0.66"></stop>
+      </linearGradient>
+    </defs>
+  </svg>
+  <!-- bg -->
+
+  <!-- download section -->
+
+  <div class="download-sec" id="download-sec">
+    <!-- for open -->
+    <div class="header h2 fw-light" id="header">
+      <li id="download-btn" onclick="downloadup()"><i class="fa-solid fa-angle-down" id="arrow"></i> </li>
+    </div>
+    <!-- for open -->
+
+    <!-- for close -->
+    <div class="header2 h2 fw-light" id="header2">
+      <li id="download-btn2" onclick="downloaddwn()"><i class="fa-solid fa-angle-down" id="arrow2"></i> </li>
+    </div>
+    <!-- for close -->
+
+    <div class="card download-card" style=" height: 35vh; box-shadow: none;position: absolute;bottom: 0;left: 22%;">
+      <div class="card-body">
+        <h5 class="card-title">Word File</h5>
+        <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+        <p class="card-text">This file contain information about us and our products.</p>
+        <div class="bbttnn">
+          <a href="Blooming Patals pdf.pdf" class="btn btn-outline-dark border border-0 rounded-0" style="width: 100%;" download="">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- download section -->
+
+  <!-- text-slider -->
+  <div class="text_slider">
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+    <h1>Blooming
+      Petals</h1>
+  </div>
+  <!-- text-slider -->
+
+
+  <div data-aos="fade-up" class="section1" id="sec1">
+    <div class="main">
+      <h1 class="heading">
+        Start your decorations with us.
+      </h1>
+      <p class="para1">
+        Join us in the art of expression, where "Blooming Petals" becomes the embodiment of thoughtful gifting,
+        spreading joy and forging lasting bonds.
+      </p>
+      <img class="background1" src="images/carlo-cucchia-lAojpEonKe0-unsplash-removebg-preview.png" alt="">
+    </div>
+
+  </div>
+
+
+
+
+  <div data-aos="fade-up" class="section2">
+    <div class="main2">
+      <div class="hover-side">
+        <h1>Motive,</h1>
+        <p>We are helping people to find and order beautiful flowers for special occasions like birthdays,
+          anniversaries, or even just to brighten someone's day. We are providing a convenient platform for users to
+          browse through a wide variety of flowers, choose their favorites, and have them delivered right to their
+          doorstep. Plus, it can also offer helpful tips and information on caring for different types of flowers.</p>
+        <a href="all.html" class="btn btn-outline-dark border border-0 rounded-0" style="width: 100%;">See More</a>
+      </div>
+    </div>
+  </div>
+
+  <div data-aos="fade-up" class="section5">
+    <div class="card mb-3 text-white text-center p-3" style="background: #3b2c2c38;">
+      <img src="images/sec5.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h1 class="card-title" style="font-family: 'Great Vibes', cursive;font-size: 4rem;">Flowers</h1>
+        <p class="card-text fs-5 p-3 lh-base"> Flowers are absolutely incredible creations of nature. They come in an
+          astonishing array of colors, shapes, and sizes. From delicate petals to vibrant blooms, each flower has its
+          own unique beauty. Flowers have been cherished by humans for centuries, not only for their aesthetic appeal
+          but also for the emotions and messages they convey. They have become symbols of love, friendship, gratitude,
+          and so much more. Whether it's a bouquet of roses on Valentine's Day or a single daisy picked from a meadow,
+          flowers have the power to brighten our days and uplift our spirits. They bring life and vibrancy to any space,
+          whether it's a garden, a room, or even a simple vase on a table. Flowers have the ability to evoke emotions,
+          create memories, and connect people. They are often used to celebrate special occasions like weddings,
+          birthdays, and anniversaries. And let's not forget about the amazing scents that flowers can emit, filling the
+          air with their intoxicating fragrance. From the sweet aroma of jasmine to the fresh scent of lavender, flowers
+          can transport us to different places and evoke a sense of calm and tranquility. Flowers also play a vital role
+          in the ecosystem, attracting pollinators like bees and butterflies, and aiding in the reproduction of plants.
+          They are a symbol of growth, renewal, and the beauty of nature. So, next time you come across a flower, take a
+          moment to appreciate its splendor and the joy it brings. 🌸🌼🌺
+        </p>
+        <p class="card-text fs-5 p-3 lh-base">Here are five beautiful flowers along with some information about each of
+          them:
+          <br>
+          1. <b>Roses</b>: <br> Roses are classic and timeless flowers that symbolize love and beauty. They come in
+          various colors, such as red, pink, yellow, and white. Roses have a lovely fragrance and are often given as
+          gifts on special occasions like Valentine's Day.
+          <br>
+          2. <b>Sunflowers</b>: <br> Sunflowers are known for their large, bright yellow petals and tall, sturdy stems.
+          They symbolize happiness, warmth, and positivity. Sunflowers are often associated with summertime and are a
+          favorite among gardeners and flower enthusiasts.
+          <br>
+          3. <b>Tulips</b>: <br> Tulips are elegant flowers that come in a wide range of colors, including red, yellow,
+          purple, and white. They are native to Central Asia and have become popular worldwide. Tulips symbolize perfect
+          love and are often associated with springtime and new beginnings.
+          <br>
+          4. <b>Daisies</b>: <br> Daisies are charming and cheerful flowers with white petals and a yellow center. They
+          represent innocence, purity, and simplicity. Daisies are commonly found in meadows and are often used in
+          floral arrangements and bouquets.
+          <br>
+          5. <b>Orchids</b>: <br> Orchids are exotic and captivating flowers known for their intricate and delicate
+          beauty. They come in various shapes, sizes, and colors, making them highly sought after by collectors and
+          enthusiasts. Orchids symbolize love, luxury, and beauty.
+          <br>
+          Each of these flowers has its own unique characteristics and meanings, making them a wonderful addition to any
+          garden or floral arrangement. I hope you find this information helpful and inspiring! 🌸🌻🌷🌼🌺
+        </p>
+        <p class="card-text fs-5 p-3 lh-base">It's hard to choose just one, as the "best" flower can vary depending on
+          personal preferences. However, roses are often considered a classic and beloved choice for their beauty
+          and symbolism. </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div data-aos="fade-up" class="section4">
+    <div class="container">
+      <h1 class="feedback-h1 sec4-h1">Latest from our collection</h1>
+
+      <div class="card text-white" style="width: 25rem; height: 23rem; background: #3b2c2c;">
+        <img src="images/twentysix.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Gift Guardian</h5>
+          <h6 class="card-title">Rs.5,499</h6>
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <div class="bbttnn">
+            <a href="p1.html" class="btn btn-outline-light border border-0 rounded-0" style="width: 100%;">See More</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="card text-white" style="width: 25rem; height: 23rem; background: #3b2c2c;">
+        <img src="images/thirtyone.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Shiny Light</h5>
+          <h6 class="card-title">Rs.1,999</h6>
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <div class="bbttnn">
+            <a href="p2.html" class="btn btn-outline-light border border-0 rounded-0" style="width: 100%;">See More</a>
+          </div>
+        </div>
+      </div>
+      <div class="card text-white" style="width: 25rem; height: 23rem; background: #3b2c2c;">
+        <img src="images/twentyseven.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Miniature Yellow</h5>
+          <h5 class="card-title">Rs.2,499</h5>
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <div class="bbttnn">
+            <a href="p3.html" class="btn btn-outline-light border border-0 rounded-0" style="width: 100%;">See More</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="card text-white" style="width: 25rem; height: 23rem; background: rgb(59, 44, 44);">
+        <img src="images/fourty.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Happy Marraige</h5>
+          <h6 class="card-title">Rs.3,999</h6>
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <div class="bbttnn">
+            <a href="p4.html" class="btn btn-outline-light border border-0 rounded-0" style="width: 100%;">See More</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div data-aos="fade-up" class="section3">
+    <!-- <div class="feedback">
+    <h1 class="feedback-h1">Give Us Your Feedback</h1>
+    <div class="input-div">
+      <input type="email" placeholder="EMAIL" id="email-input">&emsp13;
+      <input type="text" placeholder="Comment" id="feedback-input">
+      <div class="btn btn-outline-light btn-floating m-1">Submit</div>
+    </div>
+  </div> -->
+    <!-- <div class="slider-wrap">
+    <div id="card-slider" class="slider">
+      <div class="slider-item">
+          <div class="animation-card_image">
+              <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
+          </div>
+          <div class="animation-card_content">
+              <h4 class="animation-card_content_title title-2">Charlize Theron 1</h4>
+              <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
+              <p class="animation-card_content_city">New York, NY</p>
+          </div>
+      </div>
+      <div class="slider-item">
+          <div class="animation-card_image">
+              <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
+          </div>
+          <div class="animation-card_content">
+              <h4 class="animation-card_content_title title-2">Charlize Theron 2</h4>
+              <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
+              <p class="animation-card_content_city">New York, NY</p>
+          </div>
+      </div>
+      <div class="slider-item">
+          <div class="animation-card_image">
+              <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
+          </div>
+          <div class="animation-card_content">
+              <h4 class="animation-card_content_title title-2">Charlize Theron 3</h4>
+              <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
+              <p class="animation-card_content_city">New York, NY</p>
+          </div>
+      </div>
+      <div class="slider-item">
+          <div class="animation-card_image">
+              <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
+          </div>
+          <div class="animation-card_content">
+              <h4 class="animation-card_content_title title-2">Charlize Theron 4</h4>
+              <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
+              <p class="animation-card_content_city">New York, NY</p>
+          </div>
+      </div>
+      <div class="slider-item">
+          <div class="animation-card_image">
+              <img src="https://m.media-amazon.com/images/M/MV5BMTk5Mzc4ODU0Ml5BMl5BanBnXkFtZTcwNjU1NTI0Mw@@._V1_UY317_CR12,0,214,317_AL_.jpg" alt="">
+          </div>
+          <div class="animation-card_content">
+              <h4 class="animation-card_content_title title-2">Charlize Theron 5</h4>
+              <p class="animation-card_content_description p-2">With no contractual commitments comes the freedom of having top notch content created whenever.</p>
+              <p class="animation-card_content_city">New York, NY</p>
+          </div>
+      </div>
+  </div>
+  </div>   -->
+
+  </div>
+
+
+
+  <!-- <div data-aos="fade-up" class="comment-sec">
+
+      <h1>Reviews</h1>
+      
+      <div class="card w-75 mb-3 text-white d-flex justify-content-center" style="width: 25rem;  background: #3b2c2c;">
+        <div class="card-body">
+          <h5 class="card-title">Andy</h5>
+          <p class="card-text">"Easy to use, great selection, prompt delivery, and my mom loved the flowers! Highly recommend!"</p>
+
+        </div>
+      </div>
+
+
+
+      <div class="card w-75 mb-3 text-white d-flex justify-content-center" style="width: 25rem;  background: #3b2c2c;">
+        <div class="card-body">
+          <h5 class="card-title">Carter</h5>
+          <p class="card-text">"Found the perfect bouquet quickly, smooth ordering, on-time delivery, and my friend was thrilled!"</p>
+
+        </div>
+      </div>
+
+
+        <div class="card w-75 mb-3 text-white d-flex justify-content-center" style="width: 25rem;  background: #3b2c2c;">
+          <div class="card-body">
+            <h5 class="card-title">Julia</h5>
+            <p class="card-text">"User-friendly, top-notch quality, excellent customer service. Best flower website out there!"</p>
+
+          </div>
+        </div>
+      </div> -->
+
+
+  <!-- media query -->
+
+  <div class="media-section1" id="sec1">
+    <div class="main">
+      <h1 class="heading">
+        Start your decorations with us.
+      </h1>
+      <p class="para1">
+        Join us in the art of expression, where "Blooming Petals" becomes the embodiment of thoughtful gifting,
+        spreading joy and forging lasting bonds.
+      </p>
+      <img class="background1" src="images/carlo-cucchia-lAojpEonKe0-unsplash-removebg-preview.png" alt="">
+    </div>
+
+  </div>
+
+
+
+
+
+  <section class="footer">
+    <!-- Footer -->
+    <footer class="bg-transparent text-white text-center text-md-start">
+      <!-- Grid container -->
+      <div class="container-fluid p-4" style="background: #3b2c2c;">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Blooming Petals</h5>
+
+            <p>
+              We are helping people to find and order beautiful flowers for special occasions like birthdays,
+              anniversaries, or even just to brighten someone's day. We are providing a convenient platform for users to
+              browse through a wide variety of flowers, choose their favorites, and have them delivered right to their
+              doorstep. Plus, it can also offer helpful tips and information on caring for different types of flowers.
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Explore</h5>
+
+            <ul class="list-unstyled mb-0">
+              <!-- <li>
+                <a href="https://web.whatsapp.com/" class="text-white text-decoration-none"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+              </li> -->
+              <li>
+                <a href="https://www.facebook.com/" class="text-white text-decoration-none"><i
+                    class="fa-brands fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="https://twitter.com/i/flow/login" class="text-white text-decoration-none"><i
+                    class="fa-brands fa-x-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="https://mail.google.com/mail/u/0" class="text-white text-decoration-none"><i
+                    class="fa-brands fa-google"></i> GMail</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-2">Company</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="map.html" class="text-white text-decoration-none"><i class="fa-solid fa-location-dot"></i>
+                  Location</a>
+              </li>
+              <li>
+                <a href="delivery.html" class="text-white text-decoration-none"><i class="fa-solid fa-truck"></i>
+                  Delivery</a>
+              </li>
+              <li>
+                <a href="about.html" class="text-white text-decoration-none"><i class="fa-solid fa-circle-info"></i>
+                  About Us</a>
+              </li>
+              <li>
+                <a href="help.html" class="text-white text-decoration-none"><i class="fa-solid fa-question"></i>
+                  FAQs</a>
+              </li>
+              <li>
+                <!-- <a href="#!" class="text-white">Link 4</a> -->
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background: #2d2222;">
+        © 2023 Copyright:
+        <a class="text-white" href="home.html">Blooming Petals</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+
+
+    setTimeout(function () {
+      document.getElementById('popup').style.display = 'block';
+    }, 4000);
+
+    function dnone() {
+      if (document.getElementById('dnone').click) {
+        document.getElementById('popup').style.display = "none";
+      }
+
+    }
+    function cartopen() {
+      if (document.getElementById('cart-btn').toggleAttribute) {
+        document.getElementById('cart-sec').style.top = "-54rem";
+        document.getElementById('sec1').style.filter = "blur(10px)";
+        document.getElementById('main-nav').style.filter = "blur(10px)";
+
+      }
+
+    }
+    function cartclose() {
+      if (document.getElementById('close-btn').click) {
+        document.getElementById('cart-sec').style.top = "-125rem";
+        document.getElementById('sec1').style.filter = "blur(0px)";
+        document.getElementById('main-nav').style.filter = "blur(0px)";
+
+
+      }
+    }
+    function searchopen() {
+      if (document.getElementById('search-btn').click) {
+        document.getElementById('search-sec').style.left = "1rem";
+      }
+
+    }
+    function searchclose() {
+      if (document.getElementById('search-close-btn').click) {
+        document.getElementById('search-sec').style.left = "-50rem";
+      }
+    }
+    function menu() {
+      if (document.getElementById('menu-btn').click) {
+        document.getElementById('popup-nav').style.display = "block";
+      }
+      if (document.getElementById('menu-btn').click) {
+        document.getElementById('menu-btn').style.display = "none";
+      }
+    }
+    function menuclose() {
+      if (document.getElementById('menu-close').click) {
+        document.getElementById('popup-nav').style.display = "none";
+        if (document.getElementById('menu-btn').click) {
+          document.getElementById('menu-btn').style.display = "block";
+        }
+      }
+    }
+
+    // download word file
+    function downloadup() {
+      if (document.getElementById('download-btn').togglePopover) {
+        document.getElementById('download-sec').style.top = "60%";
+        document.getElementById('arrow').style.transform = "rotate(0deg)"
+        document.getElementById('header').style.display = "none"
+        document.getElementById('header2').style.display = "block"
+      }
+    }
+
+    // for closing download section
+    function downloaddwn() {
+      if (document.getElementById('download-btn2').togglePopover) {
+        document.getElementById('download-sec').style.top = "93%";
+        document.getElementById('arrow').style.transform = "rotate(180deg)"
+        document.getElementById('header').style.display = "block"
+        document.getElementById('header2').style.display = "none"
+      }
+    }
+
+    //     var cards = $('#card-slider .slider-item').toArray();
+
+    // startAnim(cards);
+
+    // function startAnim(array){
+    //     if(array.length >= 4 ) {
+    //         TweenMax.fromTo(array[0], 0.5, {x:0, y: 0, opacity:0.75}, {x:0, y: -120, opacity:0, zIndex: 0, delay:0.03, ease: Cubic.easeInOut, onComplete: sortArray(array)});
+
+    //         TweenMax.fromTo(array[1], 0.5, {x:79, y: 125, opacity:1, zIndex: 1}, {x:0, y: 0, opacity:0.75, zIndex: 0, boxShadow: '-5px 8px 8px 0 rgba(82,89,129,0.05)', ease: Cubic.easeInOut});
+
+    //         TweenMax.to(array[2], 0.5, {bezier:[{x:0, y:250}, {x:65, y:200}, {x:79, y:125}], boxShadow: '-5px 8px 8px 0 rgba(82,89,129,0.05)', zIndex: 1, opacity: 1, ease: Cubic.easeInOut});
+
+    //         TweenMax.fromTo(array[3], 0.5, {x:0, y:400, opacity: 0, zIndex: 0}, {x:0, y:250, opacity: 0.75, zIndex: 0, ease: Cubic.easeInOut}, );
+    //     } else {
+    //         $('#card-slider').append('<p>Sorry, carousel should contain more than 3 slides</p>')
+    //     }
+    // }
+
+    // function sortArray(array) {
+    //     clearTimeout(delay);
+    //     var delay = setTimeout(function(){
+    //         var firstElem = array.shift();
+    //         array.push(firstElem);
+    //         return startAnim(array); 
+    //     },3000)
+    // }
+
+  </script>
+</body>
+
+</html>
